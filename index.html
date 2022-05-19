@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.unip.br/assets/img/favicon.png" type="image/x-icon">
+    <title>Aluno - Universidade Paulista - UNIP | Ensino Presencial e à distância</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html { 
+            background: url("header_01.png") no-repeat center border-box fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: top;
+        }
+     
+       
+        #nav-link{
+            font: 20px 'Rubik' ;
+            text-decoration: none;
+            color: #ffffffff;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: end;
+            padding: 20px;
+        }
+        #nav-link:hover{
+            text-decoration: underline;
+            color: rgb(79, 76, 248);
+        }
+        .container-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 65px;
+
+        }
+        .title{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            color: #ffffff;
+            font: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ra-input,#password-input{
+            width: 250px;
+            height: 20px;
+            border-radius: 5px 5px 5px 5px;
+            border: 0.2px solid rgba(0, 0, 0, 0.459);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #enter-btn{
+            width: 273px;
+            height: 45px;
+            border-radius: 5px 5px 5px 5px;
+            background-color: rgb(17, 134, 17);
+            color: white;
+            font: normal 20px 'Rubik';
+            border: none;
+        }
+        .help{
+            display: flex;
+            width: 300px;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem;
+        }
+        #forget-pass{
+            text-align: center;
+            height: 40px;
+            width: 130px;
+            background-color: transparent;
+            border: 1px solid rgb(0, 119, 255);
+            border-radius: 3px;
+            color: #0973a0;
+            font: bold 15px  'rubik';
+        }
+        #forget-pass:hover{
+            color: white;
+            background-color:rgb(0, 119, 255) ;
+        }
+        #Howacess{
+            text-align: center;
+            height: 40px;
+            width: 130px;
+            background-color: transparent;
+            border: 1px solid rgb(0, 119, 255);
+            border-radius: 3px;
+            color: rgba(255, 255, 255, 0.877);
+            font: bold 15px  'rubik';
+        }
+        #Howacess:hover{
+            color: white;
+            background-color:rgb(0, 119, 255) ;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #033873;
+            position: fixed;
+            height: 57px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-bottom: 0px;
+        }
+        footer p {
+            color: #ffffff70;
+            font: normal 12px 'arial';
+            text-align: left;
+            padding-top: 5px;
+            margin-left: 5px;
+        }
+        #footer-strong{
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        #footer-strong:hover{
+            text-decoration: underline;
+            color: yellow;
+        }
+
+      
+    </style>
+</head>
+<body>        
+     <a id="nav-link" href="#">Voltar para o site da UNIP</a>
+     <div class="container-form">
+        <img src="https://www.unip.br/assets/img/logo/logo-unip.svg" alt="unip logo">
+        <h1 class="title">Área do Aluno</h1>
+        <input type="text" name="" id="ra-input" placeholder="RA (número da mátricula)">
+        <input type="password" name="" id="password-input" placeholder="Senha">
+        <input type="button" value="ENTRAR" id="enter-btn">
+        <div class="help">
+            <a href="#"><button id="forget-pass">Esqueci a senha</button></a>
+            <a href="#"><button id="Howacess">Como Acessar</button></a>
+        </div>
+     </div>
+     <footer><p>Copyright © 1997-2022 UNIP - Universidade Paulista. Todos os direitos reservados. <a href="#" id="footer-strong">Política de Privacidade</a></p></footer>
+</body>
+</html>
